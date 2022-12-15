@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./images/box2-heart.ico" type="image/x-icon">
+    <title>MTH Comming</title>
 </head>
-<body>
-    
+<body onload="myFunction()"> 
+    <div id="loader" style="height:100vh;display:flex;justify-content:center;align-items:center;">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            </div>
+            
+    </div>
+    <div class="main animate-bottom" style="display:none;" id="myDiv">
+        <a href="./Pages/page1.html" target="_blank">
+            <div class="btns">
+                <button> Page 1
+                </button>
+            </div>
+        </a>
+        <a href="./Pages/page2.html" target="_blank">
+            <div class="btns">
+                <button> Page 2
+                </button>
+            </div>
+        </a>
+</div>
+    <script>
+        var myVar;
+        function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
+        function showPage() {
+        const element= document.getElementById("loader");
+        element.style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    <script src="./Js/main.js"></script>
 </body>
 </html>
