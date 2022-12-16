@@ -29,7 +29,7 @@ body {
   height: 150px;
   --uib-size: 100px;
   --uib-speed: 1.2s;
-  --uib-color: #276FBF;
+  --uib-color: #FF0000;
   position: relative;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ transform-origin: center top;
 
 .newtons-cradle__dot::after {
 content: '';
-border: 1px solid #EF2F3C;
+border: 2px solid rgb(0, 0, 0);
 display: block;
 width: 100%;
 height: 25%;
