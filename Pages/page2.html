@@ -9,6 +9,7 @@
     <title>Page 2</title>
 </head>
 <body onload="myFunction()">
+    
     <div id="loader" style="width:100%;height:100vh;display:flex;justify-content:center;align-items:center;">
         <div class="newtons-cradle">
             <div class="newtons-cradle__dot"></div>
@@ -19,22 +20,31 @@
             
     </div>
     <div class="animate-bottom" style="display:none;" id="myDiv">
-    
-        
-    
-    </div>
 
-    <script>
-        var myVar;
-        function myFunction() {
-        myVar = setTimeout(showPage, 3000);
-        }
-        function showPage() {
-        const element= document.getElementById("loader");
-        element.style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
-  <script src="../Js/Timer2.js"></script>
+    <div class='wrap' ng-app='app'>
+        <div class='time-to'>
+          MTH comes to Tehran in...
+          <span countdown='' date='25 August, 2023 12:00:00'>&nbsp;</span>
+        </div>
+      </div>
+
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js
+"></script>
+
+<script>
+    var myVar;
+    function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+    const element= document.getElementById("loader");
+    element.style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+    }
+</script>
+    <script src="../Js/Timer2.js"></script>
+
 </body>
 </html>
