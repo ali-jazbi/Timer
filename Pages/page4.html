@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/timer4.css">
+    <link rel="shortcut icon" href="../images/box2-heart.ico" type="image/x-icon">
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <title>Page 4</title>
+</head>
+<body onload="myFunction()">
+    <div id="loader" style="width:100%;height:100vh;display:flex;justify-content:center;align-items:center;">
+        <div class="newtons-cradle">
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            <div class="newtons-cradle__dot"></div>
+            </div>
+            
+    </div>
+    <div class="animate-bottom" style="display:none;" id="myDiv">
+        <section class="countdown-container">
+  
+  <div class="days-container">
+    <div class="days"></div>
+    <div class="days-label">days</div>
+  </div>
+  
+  <div class="hours-container">
+    <div class="hours"></div>
+    <div class="hours-label">hours</div>
+  </div>
+  
+  <div class="minutes-container">
+    <div class="minutes"></div>
+    <div class="minutes-label">minutes</div>
+  </div>
+  
+  <div class="seconds-container">
+    <div class="seconds"></div>
+    <div class="seconds-label">seconds</div>
+  </div>
+  
+</section>
+
+
+
+
+
+        </div>  
+
+    <script>
+        var myVar;
+        function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+        }
+        function showPage() {
+        const element= document.getElementById("loader");
+        element.style.display = "none";
+        document.getElementById("myDiv").style.display = "flex";
+        }
+    </script>
+    <script src="../Js/Timer4.js"></script>
+</body>
+</html>
