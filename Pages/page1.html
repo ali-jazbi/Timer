@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/timer1.css">
-    <title>Document</title>
+    <title>Page 1</title>
 </head>
-<body>
+<body onload="myFunction()">
+  <div id="loader" style="width:100%;height:100vh;display:flex;justify-content:center;align-items:center;">
+    <div class="newtons-cradle">
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        <div class="newtons-cradle__dot"></div>
+        </div>
+        
+</div>
+  <div class="animate-bottom" style="display:none;" id="myDiv">
   <div class="container">
     <h1 id="headline">The remaining time until MTH's arrival in Tehran</h1>
     <div id="countdown">
@@ -24,6 +34,21 @@
       <span>🎂</span>
     </div>
   </div>
+  </div>
+
+
+
+  <script>
+    var myVar;
+    function myFunction() {
+    myVar = setTimeout(showPage, 3000);
+    }
+    function showPage() {
+    const element= document.getElementById("loader");
+    element.style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+    }
+</script>
     <script src="../Js/Timer1.js"></script>        
 </body>
 </html>
