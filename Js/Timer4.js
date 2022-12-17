@@ -68,7 +68,7 @@ if (today > birthday) {
 let MyDate = new Date();
 let c=MyDate.getTime();
 console.log('c: ', c);
-let a = new Date(2023,08,25);
+let a = new Date(2023,07,25);
 let d=a.getTime();
 console.log('d: ', d);
 console.log('fourthOfJulyNextYear: ',d-c);
